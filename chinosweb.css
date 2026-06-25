@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* body styling */
+body {
+    background:#ffffff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 80px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgba(225, 225, 225, 0.1);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(225, 225, 225, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border: 10px;
+    border-radius: 2px;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+}
+header span {
+    color: #0000ff;
+    font-weight: 900;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+ul li {
+    list-style: none;
+    margin: 5px;
+}
+ul a:link {
+    text-decoration: none;
+    color: black;
+    background: transparent;
+}
+ul a:visited {
+    color: black;
+    text-decoration: none;
+    background: transparent;
+}
+ul a:hover {
+    color: #0b5ed7;
+    text-decoration: underline;
+    background: transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* home styling */
+.home {
+    background: url(https://images.pexels.com/photos/30990907/pexels-photo-30990907.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+.txt {
+    background-color: rgba(225, 225, 225, 0.2);
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-top: 10px;
+    gap: 15px;
+    word-spacing: 5px;
+}
+.image img {
+    width: 300px;
+}
+.txt p {
+    font-weight: bold;
+}
+.txt span {
+    color: #0b5ed7;
+    font-weight: bold;
+}
+.txt h2 {
+    max-width: 50%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #0d6efd;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0b5ed7;
+    transform: translateY(-2px);
+}
+.home_btn {
+    display: flex;
+    flex: 1;
+    margin-top: 10px;
+    gap: 10px;
+}
+.about {
+    background: url(https://images.pexels.com/photos/14979010/pexels-photo-14979010.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    padding: 80px 50px;
+    justify-content: center;
+}
+.abt_txt {
+    background: rgba(225, 225, 225, 0.2);
+    background-size: cover;
+    backdrop-filter: blur(15px);
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+h4 {
+    color: #0000ff;
+}
+.abt_txt p {
+    font-size: medium;
+    font-weight: 500;
+}
+.top_picks{
+    background: #fff;
+}
+.content {
+    padding: 40px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.product-card {
+    width: 300px;
+    background: rgba(0,0,0,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 20px 30px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.product-card .btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #0d6efd;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.product-card .btn:hover {
+    background: #0b5ed7;
+}
+.contact {
+    background: url(https://images.unsplash.com/photo-1580974928064-f0aeef70895a?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contact-content {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+    align-items: center;
+    padding: 30px 40px;
+}
+.contact-info,
+.contact-form {
+    background-color: rgba(225, 225, 225, 0.08);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    color: #fff;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder{
+    color: #666;
+}
+.info-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+form input,
+textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+.contact button {
+    display: block;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #0000ff;
+    color: #fff;
+}
+.contact button:hover {
+    background: #ffffff;
+    color: #0000ff;
+    transition: all  0.3s ease ;
+}
+footer {
+    background: #000000;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 40px 50px;
+    width: 100%;
+}
